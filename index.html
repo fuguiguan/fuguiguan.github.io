@@ -85,16 +85,17 @@
 
 
 
-<meta name="description" content="分享生活，记录每一天">
+<meta name="description" content="web前端开发学习过程知识总结">
+<meta name="keywords" content="web 前端开发 个人博客 JavaScript HTML css vue">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Wuli观观呀">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://www.fuguiguan.cn/index.html">
 <meta property="og:site_name" content="Wuli观观呀">
-<meta property="og:description" content="分享生活，记录每一天">
+<meta property="og:description" content="web前端开发学习过程知识总结">
 <meta property="og:locale" content="zh-Hans">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Wuli观观呀">
-<meta name="twitter:description" content="分享生活，记录每一天">
+<meta name="twitter:description" content="web前端开发学习过程知识总结">
 
 
 
@@ -124,7 +125,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://www.fuguiguan.cn/"/>
 
 
 
@@ -166,7 +167,7 @@
       </a>
     </div>
       
-        <p class="site-subtitle"></p>
+        <p class="site-subtitle">一只特立独行的程序猿 @_@</p>
       
   </div>
 
@@ -268,7 +269,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/05/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://www.fuguiguan.cn/2018/09/23/排序算法总结/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Fu GuiG">
@@ -287,7 +288,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/08/05/hello-world/" itemprop="url">Hello World</a></h1>
+                <a class="post-title-link" href="/2018/09/23/排序算法总结/" itemprop="url">排序算法总结</a></h1>
         
 
         <div class="post-meta">
@@ -299,8 +300,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-05T12:55:41+08:00">
-                2018-08-05
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-23T16:17:23+08:00">
+                2018-09-23
               </time>
             
 
@@ -339,15 +340,83 @@
       
         
           
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">"My New Post"</span><br></code></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+            <h1 id="常用排序算法总结"><a href="#常用排序算法总结" class="headerlink" title="常用排序算法总结"></a>常用排序算法总结</h1><h3 id="插入排序"><a href="#插入排序" class="headerlink" title="插入排序"></a>插入排序</h3><ul>
+<li><p>一般方法 ：</p>
+<blockquote>
+<p>在第P趟，将位置P上的元素向左移动到它在前P+1个元素中的正确位置上。对于P=1到P=N-1趟，插入排序保证从位置0到位置P上的元素为已排序状态。</p>
+</blockquote>
+</li>
+<li><p>复杂度  </p>
+<blockquote>
+<p>最好的情况：数组完全有序，每次插入只需要和插入位置的前一个元素，因此复杂度为O(N);<br>最坏的情况：数组完全逆序，在插入第n个位置时，需要比较前n-1 个，次数为1+2+···+n-1+n=n*(n-1)/2. 因此复杂度为O(n^2).</p>
+</blockquote>
+</li>
+</ul>
+<hr>
+<p><strong>JavaScript算法实现</strong></p>
+<pre><code>function InsertionSort(arr,n) {
+var j,p,temp;//p趟插入,n=arr.length时能完全排序
+for (p = 1; p &lt; n; p++) {
+    temp = arr[p];
+    for(j=p; j&gt;0&amp;&amp;arr[j-1]&gt;temp; j--) {
+        arr[j] = arr[j-1];
+    }
+    arr[j] = temp;
+}
+return arr;
+}
+</code></pre><hr>
+<h3 id="快速排序"><a href="#快速排序" class="headerlink" title="快速排序"></a>快速排序</h3><ul>
+<li><p>算法步骤</p>
+<blockquote>
+<ol>
+<li>如果数组S的元素个数是1或0，则返回。<ol start="2">
+<li>取S中任一元素v，作为枢纽 元。</li>
+<li>将S-{v} 分为两个不相交的集合：S1={x∊S-{v} | x&lt;=v} 和 S2={x∊S-{v} | x&gt;=v} </li>
+<li>返回 { quicksort(s1)后，继而v,进而 quicksort(s2) }</li>
+</ol>
+</li>
+</ol>
+</blockquote>
+</li>
+<li><p>算法分析</p>
+<blockquote>
+<p>它的平均运行时间为O(N log N),它的最坏性能为O(N^2).</p>
+</blockquote>
+</li>
+<li><p>算法思想以及算法实现</p>
+</li>
+</ul>
+<ol>
+<li><p>选取枢纽元</p>
+<blockquote>
+<p>三中值法：一般方法是选择左端、右端和中心位置上的三个元素中值作为枢纽元</p>
+</blockquote>
+<pre><code>var media3 = arr[0].concat(pivot,arr.pop()).sort((a,b)=&gt;{return a-b;})[1];
+</code></pre><blockquote>
+<p>后面用递归法实现s1 . s2 的排序</p>
+</blockquote>
+<p>   function quickSort(arr) {</p>
+<pre><code>if(arr.length&lt;=1){
+  return arr;
+}
+var pivotIndex = parseInt(arr.length/2);
+var pivot = arr.splice(pivotIndex,1)[0];//直接选取中间值为枢纽元
+var left = [];
+var right = [];
+for(var i=0;i&lt;arr.length;i++) {
+  if(arr[i]&lt;pivot){
+    left.push(arr[i]);
+  }
+  else{
+    right.push(arr[i]);
+  }
+
+}
+return quickSort(left).concat(pivot,quickSort(right));
+</code></pre><p>  }</p>
+</li>
+</ol>
 
           
         
@@ -419,7 +488,7 @@
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
               <p class="site-author-name" itemprop="name">Fu GuiG</p>
-              <p class="site-description motion-element" itemprop="description">分享生活，记录每一天</p>
+              <p class="site-description motion-element" itemprop="description">web前端开发学习过程知识总结</p>
           </div>
 
           <nav class="site-state motion-element">
@@ -437,6 +506,15 @@
 
             
 
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">标签</span>
+                
+              </div>
             
 
           </nav>
