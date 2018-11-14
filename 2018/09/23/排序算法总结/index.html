@@ -93,7 +93,7 @@
 <meta property="og:site_name" content="Wuli观观">
 <meta property="og:description" content="常用排序算法总结插入排序 一般方法 ：  在第P趟，将位置P上的元素向左移动到它在前P+1个元素中的正确位置上。对于P=1到P=N-1趟，插入排序保证从位置0到位置P上的元素为已排序状态。   复杂度    最好的情况：数组完全有序，每次插入只需要和插入位置的前一个元素，因此复杂度为O(N);最坏的情况：数组完全逆序，在插入第n个位置时，需要比较前n-1 个，次数为1+2+···+n-1+n=n*">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-09-23T08:17:23.795Z">
+<meta property="og:updated_time" content="2018-11-14T01:58:10.729Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="排序算法总结">
 <meta name="twitter:description" content="常用排序算法总结插入排序 一般方法 ：  在第P趟，将位置P上的元素向左移动到它在前P+1个元素中的正确位置上。对于P=1到P=N-1趟，插入排序保证从位置0到位置P上的元素为已排序状态。   复杂度    最好的情况：数组完全有序，每次插入只需要和插入位置的前一个元素，因此复杂度为O(N);最坏的情况：数组完全逆序，在插入第n个位置时，需要比较前n-1 个，次数为1+2+···+n-1+n=n*">
@@ -397,7 +397,7 @@ return arr;
   return arr;
 }
 var pivotIndex = parseInt(arr.length/2);
-var pivot = arr.splice(pivotIndex,1)[0];//直接选取中间值为枢纽元
+var pivot = arr[pivotIndex];//直接选取中间值为枢纽元
 var left = [];
 var right = [];
 for(var i=0;i&lt;arr.length;i++) {

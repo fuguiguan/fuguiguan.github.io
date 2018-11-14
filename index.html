@@ -401,7 +401,7 @@ return arr;
   return arr;
 }
 var pivotIndex = parseInt(arr.length/2);
-var pivot = arr.splice(pivotIndex,1)[0];//直接选取中间值为枢纽元
+var pivot = arr[pivotIndex];//直接选取中间值为枢纽元
 var left = [];
 var right = [];
 for(var i=0;i&lt;arr.length;i++) {
